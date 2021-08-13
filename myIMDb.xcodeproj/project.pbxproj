@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		FE621F5426C693590024A55B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F5326C693590024A55B /* AppDelegate.swift */; };
 		FE621F5626C693590024A55B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F5526C693590024A55B /* SceneDelegate.swift */; };
-		FE621F5826C693590024A55B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F5726C693590024A55B /* ViewController.swift */; };
+		FE621F5826C693590024A55B /* ImdbCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F5726C693590024A55B /* ImdbCollectionsViewController.swift */; };
 		FE621F5B26C693590024A55B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE621F5926C693590024A55B /* Main.storyboard */; };
 		FE621F5D26C6935A0024A55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE621F5C26C6935A0024A55B /* Assets.xcassets */; };
 		FE621F6026C6935A0024A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE621F5E26C6935A0024A55B /* LaunchScreen.storyboard */; };
+		FE621F6A26C693D70024A55B /* ImdbCollectionsImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F6926C693D70024A55B /* ImdbCollectionsImporter.swift */; };
+		FE621F6D26C69E1B0024A55B /* ImdbCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F6C26C69E1B0024A55B /* ImdbCollectionData.swift */; };
+		FE621F6F26C6A1670024A55B /* ImdbCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F6E26C6A1670024A55B /* ImdbCollectionModel.swift */; };
+		FE621F7126C6B37C0024A55B /* ImdbCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE621F7026C6B37C0024A55B /* ImdbCollectionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE621F5026C693590024A55B /* myIMDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myIMDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE621F5326C693590024A55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE621F5526C693590024A55B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE621F5726C693590024A55B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE621F5726C693590024A55B /* ImdbCollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbCollectionsViewController.swift; sourceTree = "<group>"; };
 		FE621F5A26C693590024A55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE621F5C26C6935A0024A55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE621F5F26C6935A0024A55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE621F6126C6935A0024A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE621F6926C693D70024A55B /* ImdbCollectionsImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbCollectionsImporter.swift; sourceTree = "<group>"; };
+		FE621F6C26C69E1B0024A55B /* ImdbCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbCollectionData.swift; sourceTree = "<group>"; };
+		FE621F6E26C6A1670024A55B /* ImdbCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbCollectionModel.swift; sourceTree = "<group>"; };
+		FE621F7026C6B37C0024A55B /* ImdbCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbCollectionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				FE621F5326C693590024A55B /* AppDelegate.swift */,
 				FE621F5526C693590024A55B /* SceneDelegate.swift */,
-				FE621F5726C693590024A55B /* ViewController.swift */,
-				FE621F5926C693590024A55B /* Main.storyboard */,
+				FE621F6B26C693DF0024A55B /* Model */,
+				FE621F6826C693A40024A55B /* View */,
+				FE621F6726C693970024A55B /* Controller */,
 				FE621F5C26C6935A0024A55B /* Assets.xcassets */,
 				FE621F5E26C6935A0024A55B /* LaunchScreen.storyboard */,
 				FE621F6126C6935A0024A55B /* Info.plist */,
 			);
 			path = myIMDb;
+			sourceTree = "<group>";
+		};
+		FE621F6726C693970024A55B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE621F5726C693590024A55B /* ImdbCollectionsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE621F6826C693A40024A55B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE621F5926C693590024A55B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE621F6B26C693DF0024A55B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE621F6926C693D70024A55B /* ImdbCollectionsImporter.swift */,
+				FE621F6C26C69E1B0024A55B /* ImdbCollectionData.swift */,
+				FE621F6E26C6A1670024A55B /* ImdbCollectionModel.swift */,
+				FE621F7026C6B37C0024A55B /* ImdbCollectionType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE621F5826C693590024A55B /* ViewController.swift in Sources */,
+				FE621F5826C693590024A55B /* ImdbCollectionsViewController.swift in Sources */,
 				FE621F5426C693590024A55B /* AppDelegate.swift in Sources */,
 				FE621F5626C693590024A55B /* SceneDelegate.swift in Sources */,
+				FE621F6F26C6A1670024A55B /* ImdbCollectionModel.swift in Sources */,
+				FE621F7126C6B37C0024A55B /* ImdbCollectionType.swift in Sources */,
+				FE621F6A26C693D70024A55B /* ImdbCollectionsImporter.swift in Sources */,
+				FE621F6D26C69E1B0024A55B /* ImdbCollectionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
