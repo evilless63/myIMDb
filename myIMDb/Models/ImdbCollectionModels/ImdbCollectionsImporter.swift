@@ -14,8 +14,9 @@ protocol ImdbCollectionsImporterDelegate {
 
 struct ImdbCollectionsImporter {
 
-    private let apiKey: String = "k_utjycy38"
-    private let lang: String = "en"
+    private let apiKey: String = K.apiKey
+    private let lang: String = K.language
+    
     var delegate: ImdbCollectionsImporterDelegate?
     
     func loadCollections() {
